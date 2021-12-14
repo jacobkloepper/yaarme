@@ -5,4 +5,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#define MEMORY_FILE ("data/memory")
+
 #endif /* __COMMON_H__ */

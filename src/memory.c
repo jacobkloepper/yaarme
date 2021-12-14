@@ -16,6 +16,18 @@ void mem_destr() {
 	free(memory.data);
 }
 
+void mem_load(char* filename) {
+    if (access(filename, F_OK) == 0) {
+        // read bytes from file into memory.
+        // check file size in bytes, loop using that.
+        // fill the rest with zeroes.
+    }
+    else {
+        printf("File [%s] does not exist!\n");
+        exit(1);
+    }
+}
+
 uint8_t read_byte(uint64_t byte_pos) {
 	return (uint8_t) ((memory.data)[byte_pos >> 1] >> (8 * (byte_pos & 0x0001))) & 0xFF;
 }

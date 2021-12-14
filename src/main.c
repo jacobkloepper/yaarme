@@ -2,6 +2,7 @@
 #include "memory.h"
 
 int main() {
+
 	mem_init(32);
 	
 	write_byte(0, 0xFF);

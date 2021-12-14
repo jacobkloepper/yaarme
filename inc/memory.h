@@ -8,6 +8,8 @@ typedef struct Memory {
 void mem_init(uint32_t cap);
 void mem_destr();
 
+void mem_load(char* filename);
+
 uint8_t read_byte(uint64_t byte);
 uint16_t read_word(uint32_t addr);
 

@@ -8,7 +8,7 @@ BUILD_DIR = $(TARGET_DIR)/build
 INCLUDE_DIR = inc
 SCRIPT_DIR = scripts
 
-TARGET = $(TARGET_DIR)/prog
+TARGET = $(TARGET_DIR)/yaarme
 SOURCES = $(wildcard $(SOURCE_DIR)/*.c)
 OBJECTS = $(subst $(SOURCE_DIR),$(BUILD_DIR),$(SOURCES:.c=.o))
 HEADERS = $(wildcard $(INCLUDE_DIR)/*.h)
